@@ -34,12 +34,12 @@ Developer Comment:
 2. Implemented TopicControllerTestSuite which run parallel test of TopicControllerVoteTest for 4 users.
    For 4 voted 30 vote each for topic 2, so finally the vote count of topic 2 should be 120.
    
-3. For cuncurrent request the test is failed.
+3. For concurrent request the test is failed.
 
-4. Modifyed TopicController#vote my implementing synchronized block.
+4. Modified TopicController#vote my implementing synchronized block.
    Now that TopicControllerTestSuite test pass.
 
 5. Other way to fix the issue is to handle this at the database level.
-   add a new method in TopicDao#updateTopic, which can be called from controller.
+   add a new method in TopicDao#updateTopic, which can be called from the controller.
 
 
